@@ -1,0 +1,21 @@
+#footer-contact {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(120, 120, 148);
+}
+
+#footer-social-media a {
+    font-size: 1.4em;
+    color: rgb(120, 120, 148);
+    transition: all 0.3s;
+}
+
+#footer-social-media a:hover {
+    color: #cea135;
+}
+
+#footer-copyright {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(120, 120, 148);
+}

@@ -1,0 +1,15 @@
+.navbar-brand {
+    font-size: 2em;
+    color: rgb(120, 120, 148) !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-social-media a {
+    font-size: 1.4em;
+    color: rgb(120, 120, 148);
+    transition: all 0.3s;
+}
+
+#nav-social-media a:hover {
+    color: #cea135;
+}

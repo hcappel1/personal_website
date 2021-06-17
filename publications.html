@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Other style sheets -->
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/publications.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/61d3f7ece8.js" crossorigin="anonymous"></script>
+
+    <title>Homepage</title>
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand py-3" href="#"><i class="fas fa-microchip"></i></i> Henry Cappel | Robotics</a>
+          <div class="row">
+            <div class="col" id="nav-social-media">
+              <a class="px-2" href="#"><i class="fab fa-github"></i></a>
+              <a class="px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a class="px-2" href="#"><i class="fab fa-youtube"></i></a>
+              <a class="px-2" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="publications.html">Publications</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personal Projects
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">Robot Car RTOS</a></li>
+                  <li><a class="dropdown-item" href="#">Drone Mapping</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Drone Photography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Multi Robot Mapping -->
+    <div class="container">
+        <div class="row py-5">
+            <h1 class="fs-2 text-left">A Hierarchical Multi-Robot Mapping Architecture Subject to Communication Constraints</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <img class="img-fluid rounded" src="images/projects/robot_mapping_cover.png" alt="image">
+                </div>
+                <div class="row">
+                  
+                  <a class="pdf-download-tag py-2" href="images/files/Masters_Thesis(1).pdf" download target="_blank"><i class="fas fa-file-download"></i> Download PDF</a>
+                  <a class="github-link-tag py-2" href="https://github.com/hcappel1/Multi_Robot_Mapping" target="_blank"><i class="fab fa-github-square"></i> Github Repository</a>
+                  <a class="publication-link-tag py-2" href="https://arxiv.org/abs/2102.01641" target="_blank"><i class="fas fa-book"></i> Publication Link</a>
+                
+              </div>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <p>Robots can generate maps of environments and locate themselves within these maps by using the simultaneous localization and mapping (SLAM) algorithm. The advantage of the slam algorithm is that it kills two bird with one stone by allowing robots to generate spacial maps and navigate these generated maps based on monte-carlo localization. SLAM is oftentimes performed by one robot to navigate an unknown space. However, teams of robots have the capability to significantly reduce the time needed to produce a complete map by merging individual maps into a global stitched map. This project is a part of my master's thesis and is based on an algorithm to coordinate teams of robots with a central computer to map an unknown space as efficiently as possible. The algorithm takes into account a major constraint oftentimes encountered by robot swarms. Each robot has a limited communication range. Therefore, the algorithm coordinates the robots making sure they stay within valid communication range of each other and the central computer.</p>
+                </div>
+                <div class="row py-5">
+                  <div class="embed-responsive embed-responsive-4by3">
+                      <iframe class="embed-responsive-item project-video" src="https://www.youtube.com/embed/ia5jUgphrQE" allowfullscreen></iframe>
+                    </div>
+              </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+    </div>
+
+
+    <!-- Stiffness Estimation -->
+    <div class="container">
+      <div class="row py-5">
+          <h1 class="fs-2 text-left">Adaptive Compliance Shaping With Human Impedance Estimation</h1>
+      </div>
+
+      <div class="row">
+          <div class="col-4">
+              <div class="row">
+                  <img class="img-fluid rounded" src="images/projects/stiffness_estimation.png" alt="image">
+              </div>
+              <div class="row">
+                <a class="pdf-download-tag py-2" href="images/files/exoskeleton_impedance_estimation.pdf" download target="_blank"><i class="fas fa-file-download"></i> Download PDF</a>
+                <a class="publication-link-tag py-2" href="https://www.researchgate.net/publication/343249797_Adaptive_Compliance_Shaping_with_Human_Impedance_Estimation" target="_blank"><i class="fas fa-book"></i> Publication Link</a>           
+            </div>
+          </div>
+          <div class="col-8">
+              <div class="row">
+                  <p>Robotic exoskeletons are extremeley useful tools to allow a human to lift heavy objects, compensate for muscle loss, or perform difficult tasks. These devices can significantly augment the strength of the user, but have the potential to augment the strength to a greater degree and move more fluidly if controller stability guarantees are established. Because safety is always the number one priority, exoskeleton controllers oftentimes estimate human parameters within a large range to guarantee the stability of the controller for all users. However, human impedance estimation parameters can significantly improve the controller by reducing the conservative estimation of muscle stiffness and damping allowing for a more aggressive controller. We used an online muscle impedance estimator based on surface electromyograph sensors (sEMG) and stretch sensors placed around the arm. The estimator used a random forest regression to predict the impedance parameters in real time and fed this information to a compliance shaping controller within the exoskeleton. The paper was accepted by the American Control Conference 2020.</p>
+              </div>
+          </div>
+      </div>
+      <hr>
+    </div>
+
+
+    <!-- Locomanipulation -->
+    <div class="container">
+      <div class="row py-5">
+          <h1 class="fs-2 text-left">Finding Locomanipulation Plans Quickly in the Locomotion Constrained Manifold</h1>
+      </div>
+
+      <div class="row">
+          <div class="col-4">
+              <div class="row">
+                  <img class="img-fluid rounded" src="images/projects/valkyrie.png" alt="image">
+              </div>
+              <div class="row">
+                <a class="pdf-download-tag py-2" href="images/files/ICRA__Finding_Locomanipulation_Plans_in_the_Locomotion_Manifold(1).pdf" download target="_blank"><i class="fas fa-file-download"></i> Download PDF</a>
+                <a class="github-link-tag py-2" href="https://github.com/hcappel1/FootstepPlanner_Valkyrie/tree/master" target="_blank"><i class="fab fa-github-square"></i> Github Repository</a>
+                <a class="publication-link-tag py-2" href="https://www.researchgate.net/publication/342571306_Finding_Locomanipulation_Plans_Quickly_in_the_Locomotion_Constrained_Manifold" target="_blank"><i class="fas fa-book"></i> Publication Link</a>           
+              </div>
+          </div>
+          <div class="col-8">
+              <div class="row">
+                  <p>Humanoid robots interact with their environment through locomotion (moving from one spot to another) and manipulation (using an end-effector to move an object). Oftentimes these processes are performed sequentially i.e. the robot will first move to a location and then manipulate the object as a separate task. However, robot efficiency and movement fluidity can be greatly improved if these two tasks are performed in parallel (in the same way we as humans do). This project generated locomanipulation trajectories for the NASA Valkyrie humanoid robot based on a neural network classifier. My contribution to this project involved developing the software for the footstep planner based on the a* graph search algorithm. The code is written in c++ and integrates into the ROS structure for the robot. The footstep planner produces a path of footsteps for the robot to perform and also plans a manipulation trajectory for the end effector to move. The paper was accepted by ICRA 2020.</p>
+              </div>
+
+              <div class="row py-5">
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item project-video" src="https://www.youtube.com/embed/C4pfgatgYFE" allowfullscreen></iframe>
+                </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+    </div>
+
+
+    <!-- Whole Body Optimal Control -->
+    <div class="container">
+      <div class="row py-5">
+          <h1 class="fs-2 text-left">An Optimal Control Strategy For a Multi-Task Whole Body Controller</h1>
+      </div>
+
+      <div class="row">
+          <div class="col-4">
+              <div class="row">
+                  <img class="img-fluid rounded" src="images/projects/wbc.png" alt="image">
+              </div>
+              <div class="row">
+                <a class="pdf-download-tag py-2" href="images/files/Multi_Agent_Whole_Body_Control.pdf" download target="_blank"><i class="fas fa-file-download"></i> Download PDF</a>
+                <a class="github-link-tag py-2" href="https://github.com/hcappel1/OptimalControlWBC" target="_blank"><i class="fab fa-github-square"></i> Github Repository</a>           
+              </div>
+          </div>
+          <div class="col-8">
+              <div class="row">
+                  <p>Whole body control allows robots with many joints to accomplish high level tasks without causing conflicts amongst the low level moving parts. For example a humanoid robot that wants to move its hand to a specific location needs the elbow shoulder and torso to coordinate their movements such that the hand gets to the correct location. While whole body control is an established field some improvements can be made to improve the efficiency by taking advantage of the hierarchy of tasks. This project aimed to develop an efficient optimal control strategy for achieving multiple high level tasks (moving the robot base and moving the end effector to a location) based on a sparse data structure from the system kinematics. This project was not published but remained a class project and a research proposal.</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+      
+
+
+
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark">
+      <div class="row justify-content-around">
+        <div class="col-auto py-5" id="footer-contact">Email: hencappel1@gmail.com</div>
+        <div class="col-auto py-5" id="footer-copyright">
+          <i class="far fa-copyright"></i> 2021 Henry Cappel
+        </div>
+        <div class="col-auto py-5" id="footer-social-media">
+          <a class="px-3" href="#"><i class="fab fa-github"></i></a>
+          <a class="px-3" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="px-3" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="px-3" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+      
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
