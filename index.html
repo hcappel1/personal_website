@@ -11,6 +11,7 @@
     <!-- Other style sheets -->
     <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/publications.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,10 +30,10 @@
           <a class="navbar-brand py-3" href="#"><i class="fas fa-microchip"></i></i> Henry Cappel | Robotics</a>
           <div class="row">
             <div class="col" id="nav-social-media">
-              <a class="px-2" href="#"><i class="fab fa-github"></i></a>
-              <a class="px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-              <a class="px-2" href="#"><i class="fab fa-youtube"></i></a>
-              <a class="px-2" href="#"><i class="fab fa-instagram"></i></a>
+              <a class="px-2" href="https://github.com/hcappel1"><i class="fab fa-github"></i></a>
+              <a class="px-2" href="https://www.linkedin.com/in/henry-cappel-53b814128/"><i class="fab fa-linkedin-in"></i></a>
+              <a class="px-2" href="https://www.youtube.com/channel/UCbQ2EKqDDiM3S3fu3pXu6qg"><i class="fab fa-youtube"></i></a>
+              <a class="px-2" href="https://www.instagram.com/henryandhisdrone/"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,21 +52,18 @@
                   Personal Projects
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                  <li><a class="dropdown-item" href="#">Robot Car RTOS</a></li>
-                  <li><a class="dropdown-item" href="#">Drone Mapping</a></li>
+                  <li><a class="dropdown-item" href="robot_car.html">Robot Car RTOS</a></li>
+                  <li><a class="dropdown-item" href="drone_mapping.html">Drone Mapping</a></li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="drone_photography.html">Drone Photography</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="contact.html">Contact Me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="blog.html">Blog</a>
               </li>
             </ul>
           </div>
@@ -79,9 +77,11 @@
           <img class="img-fluid rounded" src="images/homepage/IMG_1314.JPG" alt="image">         
         </div>
         <div class="col-7 py-5">
-          <p>Hello to all visitors! My name is Henry Cappel. I am a robotics engineer with interests ranging from the embedded systems level to high level motion planning and control. I received my master's of science in engineering from the University of Texas at Austin. During my time as a graduate student I worked within the Human Centered Robotics Lab under Dr. Luis Sentis. I developed projects in areas of motion planning for humanoid robots, optimal control strategies for ground robots, online human impedance estimation and controller improvement for exoskeletons, and multi-robot mapping and coordination. Each project taught me something completely new about the robotics field and added to my vision of the possibilities for robots to be integrated into society. </p>
+          <p>Hello! My name is Henry Cappel. I am a robotics engineer with interests ranging from the embedded systems level to high level motion planning and control. I received my master's of science in engineering from the University of Texas at Austin. During my time as a graduate student I worked within the Human Centered Robotics Lab under Dr. Luis Sentis. I developed projects in areas of motion planning for humanoid robots, optimal control strategies for ground robots, online human impedance estimation and controller improvement for exoskeletons, and multi-robot mapping and coordination. Each project taught me something completely new about the robotics field and added to my vision of the possibilities for robots to be integrated into society. </p>
           <p>I received my bachelor of arts in psychology and physics from Swarthmore College in 2017. Psychology and robotics may seem like opposite ends of the spectrum, but I see many overlaps in robot and human intelligence and have a passion to explore the parallels as well as human-robot interactions.</p>
           <p>In addition, here you will find personal projects that present my interests in embedded systems, real-time operating systems, and drone photography. I hope you take a look and if you see projects that spur questions feel free to reach out! </p>
+          <br>
+          <a class="pdf-download-tag py-2" href="images/files/CV-Robotics-6-23-21.pdf" download target="_blank"><i class="fas fa-file-download"></i> Download CV</a>
         </div>
       </div>
     </div>
@@ -95,7 +95,7 @@
             <div class="card-body">
               <h5 class="card-title">A Hierarchical Multi-Robot Mapping Architecture Subject to Communication Constraints</h5>
               <p class="card-text">The simultaneous localization and mapping (SLAM) algorithm allows robots to generate accurate maps of a space while localizing themselves within the map. Teams of robots prove to generate maps more efficiently by merging individual maps into a global stitched map. How can a team of robots efficiently work together to create a single map of an environment? What happens when robots lose communication with the rest of the system?</p>
-              <a href="#" class="btn btn-primary">Go To Project</a>
+              <a href="publications.html#multi-robot-mapping" class="btn btn-primary">Go To Project</a>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@
             <div class="card-body">
               <h5 class="card-title">Adaptive Compliance Shaping With Human Impedance Estimation</h5>
               <p class="card-text">Strength augmentation exoskeletons can give humans strength well beyond normal capacity, but are oftentimes limited in capability due to uncertainties of controller stability. How can muscle information from the human improve controller capability allowing the exoskeleton to augment strength by an even larger factor?</p>
-              <a href="#" class="btn btn-primary">Go To Project</a>
+              <a href="publications.html#stiffness-estimation" class="btn btn-primary">Go To Project</a>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
             <div class="card-body">
               <h5 class="card-title">Finding Locomanipulation Plans Quickly in the Locomotion Constrained Manifold</h5>
               <p class="card-text">Humanoid robots need to move around their environment and also move objects with their end effectors. Oftentimes these processes are done sequentially where the robot moves to the proper location first and then attempt to manipulate an object. How can this process be performed in parallel such that robots behave more like actual human beings?</p>
-              <a href="#" class="btn btn-primary">Go To Project</a>
+              <a href="publications.html#locomanipulation" class="btn btn-primary">Go To Project</a>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
             <div class="card-body">
               <h5 class="card-title">An Optimal Control Strategy For a Multi-Task Whole Body Controller</h5>
               <p class="card-text">Multi-limbed robots achieve end effector capabilities through coordination of their limbs by a whole body controller. Whole body control is a great control strategy for single robot tasks such as moving one end effector to one position. What happens when the number of tasks increases? How can the tasks be achieved more efficiently through a modified optimal control strategy?</p>
-              <a href="#" class="btn btn-primary">Go To Project</a>
+              <a href="publications.html#optimal-control" class="btn btn-primary">Go To Project</a>
             </div>
           </div>
         </div>
@@ -143,10 +143,10 @@
           <i class="far fa-copyright"></i> 2021 Henry Cappel
         </div>
         <div class="col-auto py-5" id="footer-social-media">
-          <a class="px-3" href="#"><i class="fab fa-github"></i></a>
-          <a class="px-3" href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a class="px-3" href="#"><i class="fab fa-youtube"></i></a>
-          <a class="px-3" href="#"><i class="fab fa-instagram"></i></a>
+          <a class="px-3" href="https://github.com/hcappel1"><i class="fab fa-github"></i></a>
+          <a class="px-3" href="https://www.linkedin.com/in/henry-cappel-53b814128/"><i class="fab fa-linkedin-in"></i></a>
+          <a class="px-3" href="https://www.youtube.com/channel/UCbQ2EKqDDiM3S3fu3pXu6qg"><i class="fab fa-youtube"></i></a>
+          <a class="px-3" href="https://www.instagram.com/henryandhisdrone/"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
