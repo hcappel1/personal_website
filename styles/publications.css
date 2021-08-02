@@ -1,22 +1,26 @@
 .pdf-download-tag {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: green;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: green;
 }
 
 .github-link-tag {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: blue;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: blue;
 }
 
 .publication-link-tag {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: orange;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: orange;
 }
 
 .project-video {
-    /* width: 440px;
+  /* width: 440px;
     height: 300px; */
+}
+
+.publication-image {
+  width: 25vw;
 }
