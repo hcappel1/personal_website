@@ -1,0 +1,11 @@
+# for root
+/*              /index.html     200
+​
+# for the rest
+/about/*        /about.html     200
+/contact/*      /contact.html   200
+/publications/* /publications.html 200
+/blog/*         /blog.html      200
+/drone-mapping/* /drone-mapping.html 200
+/drone-photography/* /drone-photography.html 200
+/robot-car/*        /robot-car.html 200
